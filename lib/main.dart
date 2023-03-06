@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_fireabase_auth_project/screens/login.dart';
+import 'package:flutter_fireabase_auth_project/screens/register.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,8 +24,9 @@ class _MyAppState extends State<MyApp> {
       ),
       routes: {
         LoginScreen.routeName: (context) => LoginScreen(),
+        RegisterScreen.routeName: (context) => RegisterScreen(),
       },
-      home: LoginScreen(),
+      home: RegisterScreen(),
     );
   }
 }

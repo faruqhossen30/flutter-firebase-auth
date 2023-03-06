@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_fireabase_auth_project/screens/register.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -65,7 +66,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 20,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+
+                  },
                   child: Text("Login"),
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size.fromHeight(40),
@@ -73,7 +76,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 Text('Or'),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, RegisterScreen.routeName);
+                  },
                   child: Text("Register"),
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size.fromHeight(40),
